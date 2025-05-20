@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Movie search App</title>
+  </head>
+  <body>
+    <main>
+      <nav>
+        <a href="./index.html">Dhee<span>Star</span></a>
+        <div>
+          <a href="./index.html">Home</a>
+          <a href="./trending.html">Trending</a>
+        </div>
+      </nav>
+      <div>
+        <h1>Get information about any <span>Movie</span></h1>
+        <p>Just type the name of the movie you want to search</p>
+        <input
+          type="text"
+          id="movie"
+          class="movie_name"
+          oninput="debounce(main,1000)"
+          autocomplete="off"
+        />
+        <div class="movie_list"></div>
+      </div>
+      <div class="container"></div>
+    </main>
+    <script src="./script/index.js"></script>
+  </body>
+</html>
